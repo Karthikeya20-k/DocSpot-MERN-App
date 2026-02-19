@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+}
+
+/* Layout */
+.dashboard {
+  padding: 40px;
+}
+
+.dashboard h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Stats Cards */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  width: 150px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin: 0;
+  color: #555;
+}
+
+.stat-card p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Appointment Table */
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2a5298;
+  color: white;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.approved {
+  color: green;
+}
+
+.status.rejected {
+  color: red;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.approve-btn {
+  background: #28a745;
+  color: white;
+}
+
+.reject-btn {
+  background: #dc3545;
+  color: white;
+}
+
+/* Auth Pages */
+
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+}
+
+.auth-card {
+  background: white;
+  width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  color: #2a5298;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.auth-card input:focus {
+  border-color: #2a5298;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  background: #2a5298;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card button:hover {
+  background: #1e3c72;
+}
+
+.auth-card p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-card a {
+  color: #2a5298;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* App Layout */
+
+.app-layout {
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+.navbar {
+  height: 60px;
+  background: #2a5298;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.navbar h3 {
+  margin: 0;
+}
+
+.navbar button {
+  background: white;
+  color: #2a5298;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  background: #e0e0e0;
+}
+
+.content {
+  padding: 40px;
+}
+
+.action-card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+}
+
+.action-card h3 {
+  margin-bottom: 10px;
+}
+
+.action-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.action-card button {
+  background: #2a5298;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.action-card button:hover {
+  background: #1e3c72;
+}
+
+/* Smooth transition */
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark .navbar {
+  background: #1f1f1f;
+}
+
+body.dark .action-card,
+body.dark .stat-card,
+body.dark .table-container,
+body.dark .auth-card {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark .action-card p,
+body.dark .auth-card p {
+  color: #ccc;
+}
+
+body.dark button {
+  background: #333;
+  color: white;
+}
+
+body.dark button:hover {
+  background: #555;
+} */
+
+/* Theme Base */
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme */
+body.light {
+  background: #f4f6f9;
+  color: #111;
+}
+
+/* Dark Theme */
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+/* Navbar */
+body.dark .navbar {
+  background: #1e1e1e;
+}
+
+/* Cards & Panels */
+body.dark .action-card,
+body.dark .stat-card,
+body.dark .table-container,
+body.dark .auth-card,
+body.dark .panel {
+  background: #1f1f1f;
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Table */
+body.dark th {
+  background-color: #333;
+}
+
+body.dark td {
+  border-bottom: 1px solid #333;
+}
+
+/* Buttons */
+body.dark button {
+  background: #333;
+  color: white;
+}
+
+body.dark button:hover {
+  background: #555;
+}
+
+/* Inputs */
+body.dark input,
+body.dark select {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+
+.animated-text {
+  animation: fadeSlide 1s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
